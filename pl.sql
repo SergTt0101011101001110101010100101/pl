@@ -36,3 +36,10 @@ UPDATE  produto
 SET desconto =0
 WHERE Desconto IS NULL;
 
+SELECT cod_prod, qunatidade
+FROM produto
+WHERE desconto >10 AND desconto <20;
+
+SELECT cod_prod, quantidade, valor
+FROM produto
+WHERE cod_prod =2;
